@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>My Learning</title>
+        <link rel="stylesheet" href="../../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../../../node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="../../../css/style.css">
+
+    </head>
+<!--------DIV PROVIDES SELECT BETWEEN MYREQUESTS, MY TEAM REQUESTS AND OPEN SURVEYS WINDOWS------->
+    <body class="bg-grey">
+        <div id="wrapper">
+            <div class="side-menu" id="side-menu">
+                <section>
+                    <div class="container-fluid divfluid">
+                        <!-- Menu Section title -->
+                        <h4 class="h4style">SoftServe HRMS</h4>
+                        <!-- Lable for #showmenu to hide the menu/uncheck the checkbox -->
+                        <label class="toggler toggle-menu" onclick="myFunction()"><span class="glyphicon glyphicon-align-justify"></span></label>
+                        <!--<label class="toggle toggle-menu"><i class="glyphicon glyphicon-align-justify"></i></label>-->
+                    </div>
+
+                    <!--Search input-->
+                    <div class="row rowmargin">
+                        <div id="inputwidth" class="input-group inputgroupstyle">
+                            <input type="text" class="form-control input-search" placeholder="Search...">
+                            <span class="input-group-btn">
+                            <button class="btn btn-navbar" type="button"><i class="glyphicon glyphicon-search"></i></button>
+                            <button class="btn btn-navbar buttoncolor no-button-padding" type="button"><i class="glyphicon glyphicon-bell"></i></button>
+                            <button class="btn btn-navbar buttoncolor no-button-padding" type="button"><i class="glyphicon glyphicon-comment"></i></button>
+                        </span>
+                        </div>
+                    </div>
+
+                    <!--Trainer info-->
+                    <div class="input-group inputmargin inputgroupstyle">
+                        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 trainer-photo">
+                            <img src="http://www.zoopicture.ru/assets/2009/02/panda1.jpg" class="img-circle img-responsive" role="img" alt="trainer photo">
+                        </div>
+                        <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                            <h4 class="divh4float">Naffsdfsfsme</h4><img src="http://publikserver.de/images/stories/allesgruen.png" alt="user-icon" class="styleimg">
+                            <h5 class="divh5clear">Job possition</h5>
+                        </div>
+                        <span class="input-group-btn">
+                            <button type="button" class="btn spoiler collapsed buttonstyle" data-toggle="collapse" data-target="#user-description"></button>
+                        </span>
+                    </div>
+                    <div class="collapse divpstyle" id="user-description">
+                        <p>ddffdf</p>
+                    </div>
+
+                    <div class="input-group not-dropdown-el inputmargin inputgroupstyle ahover">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <h5><a href="#">News</a></h5>
+                        </div>
+                    </div>
+
+                    <div class="input-group dropdown-el inputgroupstyle ahover">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <h5><a href="#learning-description" data-toggle="collapse" class="no-decoration">Learning</a></h5>
+                        </div>
+                        <span class="input-group-btn left-nav-btn ">
+                        <a class="btn spoiler collapsed left-nav-btn" data-toggle="collapse" href="#learning-description"></a>
+                    </span>
+                    </div>
+                    <div class="collapse divulstyle treestyle" id="learning-description">
+                        <ul class="tree">
+                            <li><a href="#">Training catalog</a></li>
+                            <li><a href="#">Trainers</a></li>
+                            <li><a href="#">My learning</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="input-group not-dropdown-el inputgroupstyle ahover">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <h5><a href="#">Community</a></h5>
+                        </div>
+                    </div>
+
+                    <div class="input-group not-dropdown-el inputgroupstyle ahover">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <h5><a href="#">Company</a></h5>
+                        </div>
+                    </div>
+
+
+                    <div class="input-group dropdown-el inputgroupstyle ahover">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                            <h5><a href="#learning-description" data-toggle="collapse" class="no-decoration">Administration</a></h5>
+                        </div>
+                        <span class="input-group-btn left-nav-btn">
+                        <a class="btn spoiler collapsed left-nav-btn buttonone" data-toggle="collapse" href="#administration-description"></a>
+                    </span>
+                    </div>
+                    <div class="collapse divulstyle" id="administration-description">
+                        <p>some text</p>
+                    </div>
+                    <div id="footer">
+                        <label>
+                            <span class="glyphicon glyphicon-off"></span>
+                            Logout
+                        </label>
+                    </div>
+                </section>
+            </div>
+
+            <!-------main container-------->
+            <div class="page-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+                            <!--<div class="row">-->
+                            <div class="container-fluid">
+                                <div class="section">
+                                    <!--<div class="container-fluid bg-grey">-->
+                                    <div class="row">
+                                        <h2>My Learning</h2>
+                                        <ul class="nav nav-tabs">
+                                            <li class="active"><a data-toggle="tab" href="#myRequests">My Requests</a></li>
+                                            <li><a data-toggle="tab" href="#myTeamRequests">My team requests</a></li>
+                                            <li><a data-toggle="tab" href="#openSurveys">Open Surveys</a></li>
+                                        </ul>
+                                    </div>
+
+                                        <!--------"GENERAL WINDOW" SELECTED---------->
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade in active" id="myRequests">
+                                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bg-white add-margin-top div-training-description">
+
+                                                        <!-------------"OPEN MY REQUESTS" TABLE----------->
+                                                        <div>
+                                                            <div class="table-responsive">
+                                                                <table class="table table-condensed border-bottom-none vertical-align">
+                                                                    <thead class="border-header">
+                                                                        <tr>
+                                                                            <th>Training Name</th>
+                                                                            <th>Training Type</th>
+                                                                            <th>Requestor</th>
+                                                                            <th>Date</th>
+                                                                            <th>Professional Trainer</th>
+                                                                            <th>Request Status</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr class="box-shadow-grey">
+                                                                            <td class="border-left">
+                                                                                <div class="squaredTwo">
+                                                                                    <input type="checkbox" value="None" id="{{1}}" name="check"  />
+                                                                                    <label for="{{1}}"></label>
+                                                                                </div>
+                                                                                <button type="button" class="btn btn-link link-padding-left-none" data-toggle="collapse" data-target="#full_description1">IT Arena Conference</button>
+                                                                            </td>
+                                                                            <td>Conference </td>
+                                                                            <td>Roman</td>
+                                                                            <td>05.10.2014 14:00</td>
+                                                                            <td>Anna Motychak</td>
+                                                                            <td>Delivered</td>
+                                                                            <td class="border-right">
+                                                                                <button type="button" class="btn btn-link btn-sm pull-right" data-toggle="collapse" data-target="#full_description1"><span class="glyphicon glyphicon-triangle-bottom"></span></button>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td colspan="7">
+                                                                                <div id="full_description1" class="collapse">
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 add-margin-bottom">
+                                                                                            <h1>Training description</h1>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="box-shadow-grey">
+                                                                            <td class="border-left">
+                                                                                <div class="squaredTwo">
+                                                                                    <input type="checkbox" value="None" id="{{2}}" name="check" />
+                                                                                    <label for="{{2}}"></label>
+                                                                                </div>
+                                                                                <button type="button" class="btn btn-link link-padding-left-none" data-toggle="collapse" data-target="#full_description2">PM0024_0314</button>
+                                                                            </td>
+                                                                            <td>Custom</td>
+                                                                            <td>Marian Mota</td>
+                                                                            <td>08.11.2014 14:00</td>
+                                                                            <td>Anna Motychak</td>
+                                                                            <td>Delivered</td>
+                                                                            <td class="border-right">
+                                                                                <button type="button" class="btn btn-link btn-sm pull-right" data-toggle="collapse" data-target="#full_description2"><span class="glyphicon glyphicon-triangle-bottom"></span></button>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td colspan="7">
+                                                                                <div id="full_description2" class="collapse">
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 add-margin-bottom">
+                                                                                            <h1>Training description</h1>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr class="box-shadow-grey">
+                                                                            <td class="border-left">
+                                                                                <div class="squaredTwo">
+                                                                                    <input type="checkbox" value="None" id="{{3}}" name="check" />
+                                                                                    <label for="{{3}}"></label>
+                                                                                </div>
+                                                                                <button type="button" class="btn btn-link link-padding-left-none" data-toggle="collapse" data-target="#full_description3">PM0024_0442</button>
+                                                                            </td>
+                                                                            <td>Custom</td>
+                                                                            <td>Andrii Klenin</td>
+                                                                            <td>12.12.2014 10:00</td>
+                                                                            <td>Anna Motychak</td>
+                                                                            <td>Delivered</td>
+                                                                            <td class="border-right">
+                                                                                <button type="button" class="btn btn-link btn-sm pull-right" data-toggle="collapse" data-target="#full_description3"><span class="glyphicon glyphicon-triangle-bottom"></span></button>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td colspan="7">
+                                                                                <div id="full_description3" class="collapse">
+                                                                                    <div class="row">
+                                                                                        <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 add-margin-bottom">
+                                                                                            <h1>Training description</h1>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                            <div class="myLearning-foot-buttons">
+                                                                <button type="button" class="btn btn-link btn-sm">Put on hold</button>
+
+                                                                <!-- Button trigger modal -->
+                                                                <button type="button" class="btn btn-close-request btn-sm add-padding" data-toggle="modal" data-target="#myModal">
+                                                                    Close Request
+                                                                </button>
+
+                                                                <!-- Modal -->
+                                                                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                                                    <div class="modal-dialog" role="document">
+                                                                        <div class="modal-content">
+                                                                            <div class="modal-header">
+                                                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                                                <h4 class="modal-title" id="myModalLabel">Close request?</h4>
+                                                                            </div>
+                                                                            <div class="modal-body">
+                                                                                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                                                                            </div>
+                                                                            <div class="modal-footer">
+                                                                                <button type="button" class="btn btn-close-request btn-sm" data-dismiss="modal">Close Request</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!----------"MY TEAM REQUESTS WINDOW" SELECTED----------->
+                                                <div id="myTeamRequests" class="tab-pane fade">
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bg-white add-margin-top">
+                                                            <h1>My Team Requests</h1>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!---------"Open Surveys Window" SELECTED-->
+                                                <div id="openSurveys" class="tab-pane fade">
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bg-white add-margin-top">
+                                                            <h4>No open surveys</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+        function myFunction() {
+        document.getElementById("wrapper").classList.toggle("side-menu-show");
+        }
+        </script>
+
+        <script src="../../../../node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="../../../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>
